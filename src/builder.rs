@@ -84,7 +84,7 @@ pub enum ErrorHandlingMode {
 /// ```
 #[derive(Debug)]
 #[non_exhaustive]
-pub struct Builder<R: Runtime = tauri::Wry> {
+pub struct Builder<R: Runtime> {
     commands: Commands<R>,
     cfg: BuilderConfiguration,
 }
